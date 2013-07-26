@@ -1,0 +1,12 @@
+
+#载入类
+import Image
+
+#载入图像
+im = Image.open('/home/ajie/watermark/test.jpg')
+
+#查看图片属性:格式，尺寸，模式
+print im.format, im.size, mode
+
+#显示图片
+im.show()
