@@ -15,6 +15,9 @@ urls = (
 
 app_root = os.path.dirname(__file__)
 
+
+'''基于python-webpy的微信公众平台消息接口'''
+
 class weixin:        
     def GET(self):
         data = web.input()
