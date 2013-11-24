@@ -1,0 +1,34 @@
+$def with(payhtml)
+$:payhtml
+
+<form id='alipaysubmit' name='alipaysubmit' action='https://mapi.alipay.com/gateway.do?_input_charset=utf-8' method='post'>
+
+    <input type='hidden' name='_input_charset' value='utf-8'/>
+    <input type="hidden" name="body" value="测试"> 
+    <input type='hidden' name='logistics_fee' value='0'/>
+    <input type='hidden' name='logistics_payment' value='SELLER_PAY'/>
+    <input type='hidden' name='logistics_type' value='EXPRESS'/>
+    <input type="hidden" name="notify_url" value="http://xxxx.com/return"> 
+    <input type="hidden" name="out_trade_no" value="...." />
+    <input type="hidden" name="partner" value="...."> 
+    <input type="hidden" name="payment_type" value="1"> 
+    <input type='hidden' name='price' value='10'/>
+    <input type='hidden' name='quantity' value='1'/>
+    <input type='hidden' name='receive_address' value='无需收货地址'/>
+    <input type='hidden' name='receive_mobile' value='....'/>
+    <input type='hidden' name='receive_name' value='无需收货人'/>
+    <input type='hidden' name='receive_phone' value='....'/>
+    <input type='hidden' name='receive_zip' value='100000'/>
+    <input type="hidden" name="return_url" value="http://xxx.com/pay"> 
+    <input type="hidden" name="seller_email" value="..."> 
+    <input type="hidden" name="service" value="trade_create_by_buyer"> 
+    <input type="hidden" name="show_url" value="http://xxxxx.com/pay"> 
+    <input type="hidden" name="subject" value="测试">
+    <input type="hidden" name="sign" value="..."> 
+    <input type="hidden" name="sign_type" value="MD5"> 
+    <input type="submit" value="确认，支付宝付款">
+</form>
+
+
+
+
